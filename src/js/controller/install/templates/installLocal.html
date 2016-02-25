@@ -1,0 +1,22 @@
+
+<div class="col-50 col-offset-25">
+  <h2>
+    {{ "ADD A VIRTUAL MACHINE" | translate }}
+  </h2>
+
+  <div class="list">
+    <form>
+      <label class="item item-input">
+        <span class="input-label">{{ "USER" | translate }}</span>
+        <input type="text" placeholder="lbertrand" ng-model="form.user">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">{{ "VM'S ADDRESS" | translate }}</span>
+        <input type="text" placeholder="81.123.0.458" ng-model="form.address">
+      </label>
+      <button class="ion ion-ionic button button-full button-positive" ng-click="$emit('submit')">
+        {{ 'TEST CONNECTION AND SAVE' | translate }}
+      </button>
+    </form>
+  </div>
+</div>
